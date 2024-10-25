@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Yatay kaydırmayı gizler */
+}
+
+.container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.section {
+    min-width: 100vw; /* Her bölüm ekran genişliğini kaplar */
+    height: 100vh; /* Her bölüm ekran yüksekliğini kaplar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.section1 {
+    background-color: #ffcccc; /* Açık pembe arka plan */
+    font-family: 'Arial', sans-serif; /* Kalp fontu burada stilize edilebilir */
+}
+
+.section2 {
+    background-color: #ccffcc; /* Açık yeşil arka plan */
+}
