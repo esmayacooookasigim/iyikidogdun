@@ -29,15 +29,27 @@ body {
     background-color: #ccffcc; /* Açık yeşil arka plan */
 }
 
-a {
-    margin-top: 20px; /* Bağlantı için üst boşluk */
-    font-size: 1em; /* Daha küçük yazı boyutu */
-    text-decoration: none; /* Alt çizgiyi kaldır */
-    color: #007BFF; /* Bağlantı rengi */
+.navigation {
+    position: fixed; /* Butonları sabit konumda tut */
+    bottom: 20px; /* Ekranın altına 20px boşluk */
+    left: 50%; /* Ekranın ortasına hizala */
+    transform: translateX(-50%); /* Orta noktaya tam hizala */
+    display: flex;
+    gap: 10px; /* Butonlar arasında boşluk */
 }
 
-a:hover {
-    text-decoration: underline; /* Üzerine gelindiğinde alt çizgi ekle */
+button {
+    padding: 10px 15px;
+    font-size: 1em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Hover efekti */
 }
 
 /* Mobil uyumluluk için */
@@ -45,9 +57,13 @@ a:hover {
     .section {
         font-size: 1.5em; /* Daha küçük yazı boyutu */
     }
+
+    .navigation {
+        bottom: 10px; /* Mobilde daha az boşluk */
+    }
+
+    button {
+        font-size: 0.8em; /* Daha küçük yazı boyutu */
+    }
 }
 
-
-.section2 {
-    background-color: #ccffcc; /* Açık yeşil arka plan */
-}
