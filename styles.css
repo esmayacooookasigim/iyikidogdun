@@ -13,15 +13,40 @@ body {
     min-width: 100vw; /* Her bölüm ekran genişliğini kaplar */
     height: 100vh; /* Her bölüm ekran yüksekliğini kaplar */
     display: flex;
+    flex-direction: column; /* Dikey hizalama */
     justify-content: center;
     align-items: center;
     font-size: 2em;
+    padding: 20px; /* İçerik için kenar boşluğu */
+    box-sizing: border-box; /* Padding'i toplam boyuta dahil et */
 }
 
 .section1 {
     background-color: #ffcccc; /* Açık pembe arka plan */
-    font-family: 'Arial', sans-serif; /* Kalp fontu burada stilize edilebilir */
 }
+
+.section2 {
+    background-color: #ccffcc; /* Açık yeşil arka plan */
+}
+
+a {
+    margin-top: 20px; /* Bağlantı için üst boşluk */
+    font-size: 1em; /* Daha küçük yazı boyutu */
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    color: #007BFF; /* Bağlantı rengi */
+}
+
+a:hover {
+    text-decoration: underline; /* Üzerine gelindiğinde alt çizgi ekle */
+}
+
+/* Mobil uyumluluk için */
+@media (max-width: 600px) {
+    .section {
+        font-size: 1.5em; /* Daha küçük yazı boyutu */
+    }
+}
+
 
 .section2 {
     background-color: #ccffcc; /* Açık yeşil arka plan */
